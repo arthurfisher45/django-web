@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>App</title>
+</head>>
+
+<body>
+    <div>
+        <h1>
+            <a href="/">Instruments</a>
+        </h1>
+    </div>
+    
+        {% for inst in instruments %}
+        <div>            
+            <h1><a href="">{{inst.title}}</a></h1>
+            <p>Published: {{inst.published_date}}</p>
+            <p>{{inst.text|linebreaksbr}}</p>
+        </div>
+        
+        {% endfor %}
+    
+</body>
+
+</html>
